@@ -33,13 +33,6 @@ export const ProjectCard = ({
 
       <div className="absolute inset-0 flex flex-col justify-end items-start gap-1 p-4 pb-8">
         <div className="flex items-center gap-3 w-full">
-          <Image
-            src="/project-arrow.svg"
-            alt="arrow"
-            width={20}
-            height={20}
-            className="flex-shrink-0"
-          />
           <div className="flex flex-col gap-1 min-w-0 flex-1">
             <h3 className="text-xl font-bold truncate leading-tight text-left">
               {project.name}
@@ -48,6 +41,17 @@ export const ProjectCard = ({
           </div>
         </div>
       </div>
+
+      {/* Arrow - always present but only visible when selected */}
+      <Image
+        src="/project-arrow.svg"
+        alt="arrow"
+        width={20}
+        height={20}
+        className={`absolute -left-4 top-1/2 -translate-y-1/2 transition-opacity duration-200 ${
+          isSelected ? "opacity-100" : "opacity-0"
+        }`}
+      />
 
       {/* Divider for selected state */}
       {isSelected ? (

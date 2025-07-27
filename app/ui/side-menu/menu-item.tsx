@@ -6,6 +6,10 @@ import ArrowImg from "@/public/side-menu-arrow.svg";
 import { MenuOptions } from "./utils";
 import Link from "next/link";
 import { useWindowHeight } from "./useWindowHeight";
+import {
+  NavigationContextType,
+  useNavigation,
+} from "../../contexts/NavigationContext";
 
 interface IMenuItemProps {
   option: {
@@ -19,6 +23,13 @@ export const MenuItem = ({ option, isLastItem }: IMenuItemProps) => {
   const pathname = usePathname();
   const active = pathname === option.href;
   const { windowHeight } = useWindowHeight();
+  const { navigationContext } = useNavigation();
+
+  // Only show project arrow if we're on projects page and in side-menu context
+  const shouldShowProjectArrow = !(
+    pathname === "/projects" &&
+    navigationContext === NavigationContextType.Projects
+  );
 
   return (
     <li
@@ -32,6 +43,19 @@ export const MenuItem = ({ option, isLastItem }: IMenuItemProps) => {
       >
         {option.label}
       </Link>
+
+      {/* Project arrow - only show when on projects page and in side-menu context */}
+      {shouldShowProjectArrow && (
+        <Image
+          src="/project-arrow.svg"
+          alt="arrow"
+          width={20}
+          height={20}
+          className={`absolute -left-8 top-1/2 -translate-y-1/2 transition-opacity duration-200 ${
+            active ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      )}
 
       {/* ——— short divider ——— */}
       {active ? (
