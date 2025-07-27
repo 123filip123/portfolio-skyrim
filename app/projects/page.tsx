@@ -1,17 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { ProjectCard } from "../ui/project-card/project-card";
 import { PROJECTS } from "../utils/projects";
-import { Button } from "../ui/button/button";
 import { ProjectSection } from "../ui/project-section/project-section";
+import { useProjectsNavigation } from "./useProjectsNavigation";
 
 export default function Projects() {
-  const [selectedProjectId, setSelectedProjectId] = useState<number>(1);
-
-  const selectedProject = PROJECTS.find(
-    (project) => project.id === selectedProjectId
-  );
+  const { selectedProject, setSelectedProjectId } = useProjectsNavigation();
 
   return (
     <div className="flex gap-10">
@@ -24,7 +19,7 @@ export default function Projects() {
             <ProjectCard
               key={project.id}
               project={project}
-              isSelected={selectedProjectId === project.id}
+              isSelected={selectedProject?.id === project.id}
               setSelectedProjectId={setSelectedProjectId}
               isLastItem={project.id === PROJECTS.length}
             />
