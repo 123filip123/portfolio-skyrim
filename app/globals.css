@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Futura Condensed Medium";
+  src: url("/fonts/Futura Condensed Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -20,7 +28,19 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/background.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Futura Condensed Medium", Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  padding-left: 48px;
+  padding-right: 18px;
+  padding-top: 24px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Ensure all text elements inherit the text shadow */
+* {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
