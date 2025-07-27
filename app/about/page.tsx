@@ -13,6 +13,10 @@ export default function About() {
             * Psst, play the music, trust me... *
           </p>
 
+          <p className="text-md text-gray-300 italic">
+            * Also, use the arrow keys to navigate the menu *
+          </p>
+
           <p className="text-lg">
             Hi, I'm Filip Popovski — a passionate frontend engineer with over
             three years of experience building sleek, intuitive web and mobile
