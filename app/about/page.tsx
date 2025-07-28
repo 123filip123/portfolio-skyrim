@@ -23,15 +23,8 @@ export default function About() {
             applications. Currently, I work at Upshift, where I specialize in
             React, React Native, and TypeScript, delivering high-quality
             interfaces that power the leading temporary staffing platform in the
-            US.
-          </p>
-
-          <p className="text-lg">
-            I hold a Bachelor’s degree in Computer Science, and my love for tech
-            runs deep — inspired largely by my lifelong passion for gaming. This
-            passion pushed me to explore game development through Unity, where
-            I’ve prototyped several projects like a Pokémon-style battle system,
-            a space shooter, and a Hearthstone-inspired card game system.
+            US. I hold a Bachelor’s degree in Computer Science, and my love for
+            tech runs deep — inspired largely by my lifelong passion for gaming.
           </p>
 
           <p className="text-lg">
@@ -42,11 +35,11 @@ export default function About() {
           </p>
 
           <p className="text-lg">
-            On the personal side, I’m a big fan of fantasy stories, nature
-            getaways, fitness, and always on the lookout for good food and
+            On the personal side, I’m a big fan of fantasy stories, philosophy,
+            fitness, gaming, and always on the lookout for good food and
             meaningful experiences — especially when shared with my wife. When
-            I’m not coding, you might find me training at the gym, gaming, or
-            working on passion projects.
+            I’m not coding, you might find me training at the gym, gaming,
+            reading, or working on passion projects.
           </p>
         </div>
       </div>

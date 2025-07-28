@@ -3,6 +3,7 @@ import "./globals.css";
 import { SideMenu } from "./ui/side-menu/side-menu";
 import { NavigationProvider } from "./contexts/NavigationContext";
 import { GlobalKeyboardListener } from "./components/global-keyboard-listener";
+import { Toaster } from "./ui/toaster";
 
 export const metadata: Metadata = {
   title: "Filip Popovski - Skyrim Inspired Portfolio",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex">
         <NavigationProvider>
+          <Toaster />
           <GlobalKeyboardListener />
           <SideMenu />
           <main className="flex-1 px-12">{children}</main>
