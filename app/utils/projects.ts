@@ -4,7 +4,7 @@ export interface IProject {
   shortDescription: string;
   longDescription: string;
   technologies: string[];
-  link: string;
+  link?: string;
 }
 
 export const PROJECTS: IProject[] = [
@@ -46,5 +46,43 @@ export const PROJECTS: IProject[] = [
       "I created this app to solve this problem.",
     technologies: ["React Native", "TypeScript", "Expo", "Node.js", "MongoDB"],
     link: "https://github.com/123filip123/stickers-trading-app",
+  },
+  {
+    id: 4,
+    name: "Explorers - Digital Multiplayer Board Game",
+    shortDescription: "A multiplayer tile placing game.",
+    longDescription:
+      "Explorers is a multiplayer tile placing game inspired by Cartographers. " +
+      "Create or join a room with a unique code, play with friends in real time, and compete to earn the highest score through smart planning and tactical decisions." +
+      "Players take turns placing terrain tiles, building settlements, and completing objectives to earn points. " +
+      "But be careful—your opponents are trying to sabotage you with their monsters! " +
+      "I created this game to learn about multiplayer game development and real-time communication.",
+    technologies: [
+      "Next.js",
+      "Node.js",
+      "Socket.io",
+      "dnd-kit",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
+    link: "https://project-explorers.vercel.app/rooms",
+  },
+  {
+    id: 5,
+    name: "Za Dzabe - A Too Good To Go App Clone",
+    shortDescription:
+      "App that allows you to search for cheap food deals nearing the end of the day.",
+    longDescription:
+      "Za Dzabe is a Too Good To Go app clone. " +
+      "It allows you to search for cheap food deals nearing the end of the day. " +
+      "It is a clone of the Too Good To Go app, but it is not affiliated with the Too Good To Go app. " +
+      "I also wanted to create a app that would be useful for people who want to save money on food and are eco-friendly.",
+    technologies: [
+      "Next.js",
+      "React Native",
+      "Expo",
+      "Tailwind CSS",
+      "TypeScript",
+    ],
   },
 ];

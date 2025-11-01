@@ -14,10 +14,12 @@ export const ProjectSection = ({ project }: IProjectSectionProps) => {
 
       <p className="text-lg">Tech Stack: {project.technologies.join(", ")}</p>
 
-      <Button
-        text="View Project"
-        onClick={() => window.open(project.link, "_blank")}
-      />
+      {project.link && (
+        <Button
+          text="View Project"
+          onClick={() => window.open(project.link, "_blank")}
+        />
+      )}
     </div>
   );
 };

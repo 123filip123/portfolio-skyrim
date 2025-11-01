@@ -37,7 +37,9 @@ export const ProjectCard = ({
             <h3 className="text-xl font-bold truncate leading-tight text-left">
               {project.name}
             </h3>
-            <p className="truncate leading-tight">{project.shortDescription}</p>
+            <p className="truncate leading-tight text-left">
+              {project.shortDescription}
+            </p>
           </div>
         </div>
       </div>
