@@ -34,29 +34,17 @@ export const PROJECTS: IProject[] = [
   },
   {
     id: 3,
-    name: "Stickers Trading App",
-    shortDescription:
-      "A cross-platform mobile app for sticker album collectors to track missing and duplicate stickers.",
+    name: "Explorers - Digital Multiplayer Board Games Platform",
+    shortDescription: "A multiplayer gaming platform featuring 2 board games.",
     longDescription:
-      "A cross-platform mobile app for sticker album collectors to track missing and duplicate stickers. " +
-      "All collectors of sticker albums, regardless of album theme, face the same problem. Albums can contain anywhere from 200 to nearly 1,000 stickers. " +
-      "Tracking the state of the stickers, most importantly which stickers are missing, and which and how many duplicates they have, is usually done by writing it down on a piece of paper. " +
-      "Each time a missing sticker is obtained, or a duplicate is obtained or exchanged, this sheet is supplemented and crossed out. " +
-      "The process itself takes a lot of time. Eventually the sheet becomes unreadable and useless." +
-      "I created this app to solve this problem.",
-    technologies: ["React Native", "TypeScript", "Expo", "Node.js", "MongoDB"],
-    link: "https://github.com/123filip123/stickers-trading-app",
-  },
-  {
-    id: 4,
-    name: "Explorers - Digital Multiplayer Board Game",
-    shortDescription: "A multiplayer tile placing game.",
-    longDescription:
+      "Explorers is a multiplayer gaming platform featuring 2 board games, Explorers and Dixit. " +
       "Explorers is a multiplayer tile placing game inspired by Cartographers. " +
       "Create or join a room with a unique code, play with friends in real time, and compete to earn the highest score through smart planning and tactical decisions." +
       "Players take turns placing terrain tiles, building settlements, and completing objectives to earn points. " +
       "But be careful—your opponents are trying to sabotage you with their monsters! " +
-      "I created this game to learn about multiplayer game development and real-time communication.",
+      "Dixit is a card game where players draw cards and then vote on the picture on their card. " +
+      "The player with the most votes wins the round. " +
+      "I created this platform to learn about multiplayer game development and real-time communication.",
     technologies: [
       "Next.js",
       "Node.js",
@@ -68,21 +56,20 @@ export const PROJECTS: IProject[] = [
     link: "https://project-explorers.vercel.app/rooms",
   },
   {
-    id: 5,
-    name: "Za Dzabe - A Too Good To Go App Clone",
-    shortDescription:
-      "App that allows you to search for cheap food deals nearing the end of the day.",
+    id: 4,
+    name: "E-Shop Demo",
+    shortDescription: "Demo e-shop built with Next.js and shadcn/ui.",
     longDescription:
-      "Za Dzabe is a Too Good To Go app clone. " +
-      "It allows you to search for cheap food deals nearing the end of the day. " +
-      "It is a clone of the Too Good To Go app, but it is not affiliated with the Too Good To Go app. " +
-      "I also wanted to create a app that would be useful for people who want to save money on food and are eco-friendly.",
+      "E-Shop Demo is a demo e-shop built with Next.js and shadcn/ui. " +
+      "It is a simple e-shop that allows you to browse products and add them to your cart. " +
+      "The demo features a theme switcher that utilizes tweakcn themes.",
     technologies: [
       "Next.js",
-      "React Native",
-      "Expo",
+      "shadcn/ui",
       "Tailwind CSS",
       "TypeScript",
+      "tweakcn",
     ],
+    link: "https://eshop-demo-drab.vercel.app/",
   },
 ];
